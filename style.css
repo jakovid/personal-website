@@ -1,0 +1,60 @@
+:root {
+    --vice-blue:#0bd3d3;
+    --vice-pink:#f890e7;
+    --vice-gray:#d0d0d0;
+}
+
+* {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header {
+    background-color: var(--vice-pink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    padding-right: 0.5rem;
+}
+
+.header-left:hover {
+    font-weight: bold;
+    background-color: var(--vice-blue);
+}
+
+.header-picture {
+    height: 2rem;
+    background-color: var(--vice-blue);
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.header-nav-btn {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.header-nav-btn:hover {
+    background-color: var(--vice-blue);
+    font-weight: bold;
+}
+
+.hero {
+    background-color: var(--vice-gray);
+    height: 40rem;
+}
