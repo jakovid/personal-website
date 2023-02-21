@@ -44,10 +44,11 @@
 
 .my-project-item-info {
     background-color: var(--dark-blue);
-    padding: 2rem;
+    padding: 2rem 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     
 }
 
@@ -56,9 +57,19 @@
 }
 
 .my-project-item-info>p {
-    margin-left: -15rem;
+    margin-left: -7rem;
     background-color: var(--dark-blue);
     padding: 2rem;
     border-radius: 2rem;
-    
+}
+
+.my-project-item-skills {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.skill-icon {
+    text-align: center;
 }
