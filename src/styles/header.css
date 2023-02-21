@@ -4,6 +4,7 @@
     background-color: var(--dark-blue);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 1rem;
     color: var(--light-blue)
 }
@@ -15,10 +16,15 @@
     border-radius: 2rem;
     padding-right: 1rem;
     height: 4rem;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+    background: linear-gradient(to left, var(--dark-blue) 50%, var(--blue) 50%) right;
+    background-size: 200% 100%;
+    background-position: right;
 }
 
 .header-left:hover {
-    background-color: var(--blue);
+    background-position: left;
 }
 
 
@@ -32,4 +38,24 @@
 .header-name {
     font-family: monospace;
     font-size: 2rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    gap: 0.5rem
+}
+
+.header-right-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    transition: all .25s ease-out;
+}
+
+.header-right-item:hover {
+    background-color: var(--blue);
 }

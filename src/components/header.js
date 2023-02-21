@@ -32,7 +32,12 @@ export default function BuildHeader() {
                 <img className="header-img" src={JacobDowdle}/>
                 <h1 className="header-name" id="hacker-effect" onMouseOver={HackerEffect} data-value="JACOB DOWDLE">WHO IS THIS?</h1>
             </div>
-            <div className="header-right"></div>
+            <div className="header-right">
+                <a className="header-right-item">HOME</a>
+                <a className="header-right-item">ABOUT</a>
+                <a className="header-right-item">PROJECTS</a>
+                <a className="header-right-item">CONTACT</a>
+            </div>
         </header>
     )
 }
