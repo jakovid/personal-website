@@ -33,10 +33,10 @@ export default function BuildHeader() {
                 <h1 className="header-name" id="hacker-effect" onMouseOver={HackerEffect} data-value="JACOB DOWDLE">WHO IS THIS?</h1>
             </div>
             <div className="header-right">
-                <a className="header-right-item">HOME</a>
-                <a className="header-right-item">ABOUT</a>
-                <a className="header-right-item">PROJECTS</a>
-                <a className="header-right-item">CONTACT</a>
+                <a className="header-right-item" href="#home">HOME</a>
+                <a className="header-right-item" href="#about">ABOUT</a>
+                <a className="header-right-item" href="#projects">PROJECTS</a>
+                <a className="header-right-item" href="#contact">CONTACT</a>
             </div>
         </header>
     )

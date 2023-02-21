@@ -7,6 +7,7 @@ export default function BuildHero() {
             <div className="hero-intro-text">
                 <h1>HEY. I'M JACOB DOWDLE</h1>
                 <h2>a front-end developer currently based in Taipei that enjoys building websites and web apps. Let's build something amazing together.</h2>
+                <a href="" className="hero-portfolio-button">My Projects</a>
             </div>
         </div>
     )
