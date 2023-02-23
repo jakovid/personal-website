@@ -15,7 +15,6 @@ export default function BuildAbout() {
                 <div className="about-me-info-left">
                     <h2>Who am I?</h2>
                     <p>I am a <b>front-end web developer</b> from Ohio, currently based in the APAC region. I love building websites and web applications, especially with other developers. I am currently building a new social media web app for live performers with a friend right now! You can check out some of my projects below.</p>
-                    <p>I also like creating web development content in my free time. I'll be linking to my articles and videos here in the future. Please check them out and give them a like, comment, or share if you find them useful!</p>
                     <p>I am open to <b>front-end job opportunities</b> where I can build something great alongside some other great developers, or if you need someone to be the sole developer on a project. If you have an opportunity that aligns with my skillset and experience, please do not hesitate to contact me!</p>
                 </div>
                 <div className="about-me-info-right">
