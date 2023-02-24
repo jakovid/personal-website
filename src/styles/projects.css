@@ -84,7 +84,7 @@
 
 .my-project-item-info>p {
     margin-left: -7rem;
-    background-color: var(--blue);
+    background-color: var(--blue-med-opacity);
     color: var(--light-blue);
     padding: 2rem;
     border-radius: .5rem;

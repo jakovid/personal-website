@@ -49,7 +49,7 @@ export default function BuildMyProjects() {
                         <h2 className="my-project-item-name">Set Listed</h2>
                         <h3>Social Media Web Application</h3>
                         </div>
-                        <p>Set Listed is a social media web application for live performers I am working on with two developers in the UK through Trello, Github, and weekly stand-ups. The project incorporates RESTful APIs, CRUD operations, state management, and asynchronus programming. Users can currently create and update profiles, and create posts. In the future they will be able to send messages, create groups, and share events.</p>
+                        <p>Set Listed is a social media web application for live performers I am working on with two developers in the UK through Trello, Github, and weekly stand-ups. The project incorporates RESTful APIs, CRUD operations, state management, and asynchronus programming. Users can currently create and update profiles, send private messages, and create posts. In the future they will be able to create groups, and share events.</p>
                         <div className="my-project-item-skills">
                             <div className="skill-icon">
                                 <p>TypeScript</p>

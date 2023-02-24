@@ -1,6 +1,7 @@
 :root {
   --dark-blue: #112D4E;
   --blue: #3F72AF;
+  --blue-med-opacity: rgb(63, 114, 175, .7);
   --light-blue: #DBE2EF;
   --off-white: #F9F7F7;
 }
