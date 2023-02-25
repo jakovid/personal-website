@@ -8,7 +8,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem
+    gap: 2rem;
 }
 
 .my-projects-title {
@@ -21,88 +21,14 @@
     gap: 3rem;
 }
 
-.my-project-item {
-    display: flex;
-    align-items: center;
-    text-align: left;
-
-}
-
-.my-project-item.reverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.my-project-item-name-cont {
-    text-align: right;
-}
-
-.my-project-item-name-cont.reverse {
-    text-align: left;
-}
-
-.my-project-item-img {
-    height: 587px;
-    height: 330px;
-    background-size: cover;
-    border-radius: .25rem;
-}
-
-.my-project-item-img.sky-education {
-    background-image: url("../media//sky-education.png");
-}
-
-.my-project-item-img.set-listed {
-    background-image: url("../media/set-listed.png");
-}
-
-.my-project-item-img-cover {
-    width: 587px;
-    height: 330px;
-    background-color: rgb(0, 0, 0, .8);
-    transition: all .7s;
-    border-radius: .2rem;
-}
-
-.my-project-item-img-cover:hover {
-    background-color: rgb(100, 100, 100, .0);
-}
-
-.my-project-item-info {
-    background-color: var(--dark-blue);
-    padding: 2rem 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.my-projects-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: 85vh;
     
 }
 
-.my-project-item-name {
-    font-size: 2rem;
-}
-
-.my-project-item-info>p {
-    margin-left: -7rem;
-    background-color: var(--blue-med-opacity);
-    color: var(--light-blue);
-    padding: 2rem;
-    border-radius: .5rem;
-    z-index: 1;
-}
-
-.my-project-item-info.reverse>p {
-    margin-right: -7rem;
-    margin-left: unset;
-}
-
-.my-project-item-skills {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    justify-content: center;
-}
-
-.skill-icon {
-    text-align: center;
+.my-projects-item-section {
+    border: 1px solid white;
 }
