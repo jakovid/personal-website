@@ -3,12 +3,13 @@
 .my-projects-cont {
     border-top: 4px solid var(--dark-blue);
     background-color: var(--dark-blue);
-    padding: 2rem 5rem;
+    padding: 2rem 0rem;
     color: var(--off-white);
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: 650px;
 }
 
 .my-projects-title {
@@ -19,16 +20,83 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+    position: relative;
 }
 
 .my-projects-item {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    height: 85vh;
-    
+    grid-template-rows: 3fr 1fr;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: transform 300ms ease;
 }
 
-.my-projects-item-section {
-    border: 1px solid white;
+.my-projects-item[data-status="inactive"] {
+    transform: translatex(-100%);
+}
+
+.my-projects-item-description, .my-projects-item-nav {
+    border-left: 1px solid white;
+}
+
+.my-projects-item-title, .my-projects-item-nav {
+    border-top: 1px solid white;
+}
+
+.sky-education {
+    background-image: url("../media/sky-education.png");
+    background-size: cover;
+}
+
+.set-listed {
+    background-image: url("../media/set-listed.png");
+    background-size: cover;
+}
+
+.my-projects-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.my-projects-item-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-projects-item-title>h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.my-projects-item-title>h2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.my-projects-item-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.my-projects-item-nav-btn {
+    background-color: unset;
+    cursor: pointer;
+    border: unset;
+}
+
+.my-projects-item-nav-btn>svg {
+    fill: var(--off-white);
 }
