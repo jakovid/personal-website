@@ -1,0 +1,95 @@
+.life-map-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-cont {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.world-map-svg {
+    height: 350px;
+}
+
+.experience-description {
+    background-color: pink;
+}
+
+.timeline-name {
+    width: 100px;
+}
+
+.timeline-name.education {
+    grid-row: 2;
+}
+
+.experience-timeline-cont {
+    height: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(53, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.american-university {
+    grid-row: 2;
+    grid-column: span 8;
+    background-color: purple;
+}
+
+.miami-university.first {
+    grid-row: 2;
+    grid-column: span 7;
+    background-color: blueviolet;
+}
+
+.tianjin-university {
+    grid-row: 2;
+    background-color: pink;
+}
+
+.loction-timeline-cont {
+    display: grid;
+    grid-template-columns: 1fr repeat(53, 1fr);
+    height: 4rem;
+    width: 100%;
+}
+
+.usa-life {
+    background-color: red;
+}
+
+.usa-life.first {
+    grid-column: span 11;
+}
+
+.usa-life.second{
+    grid-column: span 3;
+}
+
+.usa-life.third{
+    grid-column: span 9;
+}
+
+.korea-life {
+    background-color: blue;
+}
+
+.china-life {
+    background-color: purple;
+}
+
+.china-life.second {
+    grid-column: span 14;
+}
+
+.taiwan-life{
+    background-color: green;
+}
+
+.taiwan-life.first {
+    grid-column: span 14;
+}
