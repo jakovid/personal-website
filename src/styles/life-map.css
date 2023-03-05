@@ -14,6 +14,22 @@
     height: 350px;
 }
 
+#experience-img {
+    height: 60px;
+}
+
+.timelines-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1rem 0 1rem 0;
+}
+
+.timeline-name {
+    text-align: right;
+    padding-right: 5px;
+}
+
 .experience-description {
     background-color: pink;
 }
@@ -22,74 +38,113 @@
     width: 100px;
 }
 
-.timeline-name.education {
-    grid-row: 2;
-}
-
-.experience-timeline-cont {
-    height: 4rem;
+.work-timeline-cont {
+    height: 26px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr repeat(53, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr repeat(45, 1fr);
+    align-items: center;
 }
 
-.american-university {
-    grid-row: 2;
-    grid-column: span 8;
-    background-color: purple;
+.spec-medic.first {
+    grid-column: 2 / span 3;
+    background-color: white;
 }
 
-.miami-university.first {
-    grid-row: 2;
-    grid-column: span 7;
-    background-color: blueviolet;
-}
-
-.tianjin-university {
-    grid-row: 2;
-    background-color: pink;
-}
-
-.loction-timeline-cont {
-    display: grid;
-    grid-template-columns: 1fr repeat(53, 1fr);
-    height: 4rem;
-    width: 100%;
-}
-
-.usa-life {
-    background-color: red;
-}
-
-.usa-life.first {
-    grid-column: span 11;
-}
-
-.usa-life.second{
-    grid-column: span 3;
-}
-
-.usa-life.third{
+.spec-medic.second {
     grid-column: span 9;
+    background-color: white;
 }
 
-.korea-life {
-    background-color: blue;
+.megazone-intern {
+    background-color: white;
 }
 
-.china-life {
-    background-color: purple;
+.resolution-economics {
+    background-color: white;
+    grid-column: span 2;
 }
 
-.china-life.second {
-    grid-column: span 14;
+.warm-outdoors {
+    grid-column: span 7;   
+    background-color: white;
 }
 
-.taiwan-life{
-    background-color: green;
+.cic {
+    grid-column: span 6;
+    background-color: rgb(13,53,114);
+    color: white;
 }
 
-.taiwan-life.first {
-    grid-column: span 14;
+.amcham {
+    grid-column: span 3;
+    background-color: white;
+}
+
+.one-more-drink {
+    grid-column: span 7;
+    background-color: yellow;
+}
+
+.free-lance {
+    grid-column: span 7;
+}
+
+.education-timeline-cont {
+    height: 26px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(45, 1fr);
+    align-items: center;
+}
+
+.education-item, .work-item  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    height: 22px;
+    padding: .25rem;
+    gap: 5px;
+    text-align: center;
+}
+
+.work-item {
+    border-right: none;
+}
+
+.work-item:last-child {
+    border-right: 2px solid black;
+}
+
+.education-item>img, .work-item>img  {
+    height: 18px;
+    
+}
+
+.education-item>div, .work-item>div {
+    font-weight: bold;
+    width: 100%;
+}
+
+.miami-university {
+    background-color: rgb(245, 244, 244);
+    background-size: cover;
+    background-position: center;
+    grid-column: span 12;
+
+}
+
+.jiaotong-university {
+    grid-column: 19 / span 6;
+    border-right: none;
+}
+
+.fudan-university {
+    grid-column: 25 / span 8;
+    
+}
+
+.odin-project {
+    grid-column: 40 / span 7;
 }
