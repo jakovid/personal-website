@@ -11,11 +11,16 @@
 }
 
 .world-map-svg {
-    height: 350px;
+    transform: scale(0.5);
+    margin-left: -40rem;
+    margin-top: -15rem;
+    margin-bottom: -15rem;
+    margin-right: -35rem;
 }
 
 #experience-img {
-    height: 60px;
+    max-width: 300px;
+    max-height: 80px;
 }
 
 .timelines-cont {
@@ -147,4 +152,8 @@
 
 .odin-project {
     grid-column: 40 / span 7;
+}
+
+.filled-country {
+    fill: red;
 }
