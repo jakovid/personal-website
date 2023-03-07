@@ -154,6 +154,6 @@
     grid-column: 40 / span 7;
 }
 
-.filled-country {
+.selected-country {
     fill: red;
 }
