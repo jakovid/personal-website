@@ -19,7 +19,16 @@ import Odin from "../media/odin.jpg";
 
 export default function BuildLifeMap() {
 
-    const [selectedCountry, setSelectedCountry] = useState("");
+    const [selectedCountry, setSelectedCountry] = useState("TW");
+    const [selectedExperience, setSelectedExperience] =useState({
+        title: "Bachelor of Science: Business",
+        venue: "Farmer School of Business",
+        location: "Oxford, Ohio",
+        description: "hi",
+        country: "USA",
+        duration: "2011-2014",
+        img: MU,
+    })
 
     const timelineData = [
         {
@@ -27,7 +36,7 @@ export default function BuildLifeMap() {
             venue: "Farmer School of Business",
             location: "Oxford, Ohio",
             country: "usapac",
-            description: "hi",
+            description: "I attended the Farmer School of Business (FSB) at Miami University. FSB was ranked as a top ten public business school program during the years I attended. During my enrollment at FSB, I was able to join the APAC traveling business program at Peking University in Beijing, Jiaotong University in Shanghai, Tokyo University in Tokyo, and Yonsei University in Seoul.",
             duration: "2011-2014",
             img: MU,
         },
@@ -143,13 +152,8 @@ export default function BuildLifeMap() {
     }
 
     function UpdateTimelineInfo(index) {
-        document.querySelector('#experience-title').innerHTML = timelineData[index].title;
-        document.querySelector('#experience-venue').innerHTML = timelineData[index].venue;
-        document.querySelector('#experience-location').innerHTML = timelineData[index].location;
-        document.querySelector('#experience-description').innerHTML = timelineData[index].description;
-        document.querySelector('#experience-duration').innerHTML = timelineData[index].duration;
-        document.querySelector('#experience-img').src = timelineData[index].img;
-        setSelectedCountry(timelineData[index].country)
+        setSelectedExperience(timelineData[index]);
+        setSelectedCountry(timelineData[index].country);
     }
 
     return(
@@ -157,7 +161,6 @@ export default function BuildLifeMap() {
             <h1>My Journey</h1>
 
             <div className="map-cont">
-                {/* <img src={WorldMap} className="world-map-svg"></img> */}
                 <svg id="world-map-svg" className="world-map-svg" baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
  <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="AF" name="Afghanistan">
  </path>
@@ -1107,12 +1110,12 @@ export default function BuildLifeMap() {
  </circle>
                 </svg>
                 <div id="experience-info-cont">
-                    <img id="experience-img" src={timelineInfo.img}/>
-                    <div id="experience-title">{timelineInfo.title}</div>
-                    <div id="experience-venue">{timelineInfo.venue}</div>
-                    <div id="experience-location">{timelineInfo.location}</div>
-                    <div id="experience-description">{timelineInfo.description}</div>
-                    <div id="experience-duration">{timelineInfo.duration}</div>
+                    <img id="experience-img" src={selectedExperience.img}/>
+                    <div id="experience-title">{selectedExperience.title}</div>
+                    <div id="experience-venue">{selectedExperience.venue}</div>
+                    <div id="experience-location">{selectedExperience.location}</div>
+                    <div id="experience-description">{selectedExperience.description}</div>
+                    <div id="experience-duration">{selectedExperience.duration}</div>
                 </div>
             </div>
 
