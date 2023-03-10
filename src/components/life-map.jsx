@@ -36,7 +36,7 @@ export default function BuildLifeMap() {
             venue: "Farmer School of Business",
             location: "Oxford, Ohio",
             country: "usapac",
-            description: "I attended the Farmer School of Business (FSB) at Miami University. FSB was ranked as a top ten public business school program during the years I attended. During my enrollment at FSB, I was able to join the APAC traveling business program at Peking University in Beijing, Jiaotong University in Shanghai, Tokyo University in Tokyo, and Yonsei University in Seoul.",
+            description: "I attended the Farmer School of Business (FSB) at Miami University. FSB was ranked as a top ten public business school program during the years I attended. During my enrollment at FSB, I was able to join the 2 month traveling business program that visited Peking University in Beijing, Jiaotong University in Shanghai, Tokyo University in Tokyo, and Yonsei University in Seoul. I was one of three students selected from 30 in the program for an internship in Seoul.",
             duration: "2011-2014",
             img: MU,
         },
@@ -45,7 +45,7 @@ export default function BuildLifeMap() {
             venue: "Shanghai Jiaotong University",
             location: "Shanghai, China",
             country: "China",
-            description: "hi",
+            description: "I attended the intensive Chinese language program at Jiaotong University. The program consisted of 4 hour classes everyday for a year, with a focus on speaking Mandarin and reading Chinese texts. It was difficult.",
             duration: "2016-2017",
             img: Jiaotong,
         },
@@ -90,7 +90,7 @@ export default function BuildLifeMap() {
             venue: "Resolution Economics LLC",
             location: "Beverly Hills, California",
             country: "USA",
-            description: "hi",
+            description: "Resoultion Economics is a legal services company. During my employment there, the company primarily focused on statistical analyses of payroll data to protect multinational corporations from lawsuits filed by their employees. I help with database creation and cleaning, SASS based analyses, and drafting expert witness reports. It has since grown to five offices across the United States. Each case I worked on was won or settled out of court.",
             duration: "2014- 2015",
             img: ResEcon,
         },
@@ -1112,10 +1112,9 @@ export default function BuildLifeMap() {
                 <div id="experience-info-cont">
                     <img id="experience-img" src={selectedExperience.img}/>
                     <div id="experience-title">{selectedExperience.title}</div>
-                    <div id="experience-venue">{selectedExperience.venue}</div>
+                    <div id="experience-venue">{selectedExperience.venue +" - "+ selectedExperience.duration}</div>
                     <div id="experience-location">{selectedExperience.location}</div>
-                    <div id="experience-description">{selectedExperience.description}</div>
-                    <div id="experience-duration">{selectedExperience.duration}</div>
+                    <p id="experience-description">{selectedExperience.description}</p>
                 </div>
             </div>
 

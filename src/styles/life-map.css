@@ -23,6 +23,19 @@
     max-height: 80px;
 }
 
+#experience-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#experience-venue {
+    font-weight: bold;
+}
+
+#experience-description {
+    padding: 15px 15px 0 0;
+}
+
 .timelines-cont {
     display: flex;
     flex-direction: column;
