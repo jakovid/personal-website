@@ -133,7 +133,7 @@ export default function BuildLifeMap() {
             location: "Taipei, Taiwan",
             country: "TW",
             description: "In 2019 I moved to Taipei to start a company with a friend in the tourism industry. We eventually pivoted to create the OneMoreDrink app following the collapse of the local tourism industry due to COVID-19. OneMoreDrink was a web and mobile app that allowed users to find nightlife, events, daily specials, and happy hours throughout the city. We stopped maintaining the app once COVID-19 entered Taiwan and shut down most events.",
-            duration: "2019-2020",
+            duration: "2019-2021",
             img: OMD,
         },
         {
@@ -1115,10 +1115,11 @@ export default function BuildLifeMap() {
             </div>
 
             <div className="timelines-cont">
+                
                 <div className="work-timeline-cont">
                     <div className="timeline-name work">work</div>
                     <div className="work-item spec-medic first" id={selectedExperience.venue == "SpecMedic" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(4)}}>
-                        <img src={Spec2}/>
+                        <img src={Spec}/>
                     </div>
                     <div className="work-item megazone-intern" id={selectedExperience.venue == "MegaZone Cloud" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(5)}}>
                         <img src={MZC} />
@@ -1136,7 +1137,7 @@ export default function BuildLifeMap() {
                     </div>
                     <div className="work-item cic" id={selectedExperience.venue == "China Insights Consultancy" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(8)}}>
                         <img src={CIC}/>
-                        <div>Industry Report Editor</div>
+                        <div>Editor</div>
                     </div>
                     <div className="work-item amcham" id={selectedExperience.venue == "The American Chamber of Commerce in Shanghai" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(9)}}>
                         <img src={AmCham}/>
@@ -1150,24 +1151,41 @@ export default function BuildLifeMap() {
                         <div>Freelance Programmer</div>
                     </div>
                 </div>
+
                 <div className="education-timeline-cont">
                     <div className="timeline-name education">education</div>
                     <div className="education-item miami-university" id={selectedExperience.venue == "Farmer School of Business" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(0)}}>
                         <img src={MU}/>
-                        <div>Bachelor of Science: Business</div>
+                        <div>Bachelor of Science</div>
                     </div>
                     <div className="education-item jiaotong-university" id={selectedExperience.venue == "Shanghai Jiaotong University" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(1)}}>
                         <img src={Jiaotong}/>
-                        <div>Chinese Language</div>
+                        <div>中文</div>
                     </div>
                     <div className="education-item fudan-university" id={selectedExperience.venue == "Fudan University" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(2)}}>
                         <img src={Fudan}/>
-                        <div>Master of Law:  Poli Sci</div>
+                        <div>Master of Law</div>
                     </div>
                     <div className="education-item odin-project" id={selectedExperience.venue == "The Odin Project" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(3)}}>
                         <img src={Odin}/>
                         <div>The Odin Project</div>
                     </div>
+                </div>
+                <div className="year-timeline-cont">
+                    <div className="timeline-name "></div>
+                    <div className="half-year">2011</div>
+                    <div className="full-year">2012</div>
+                    <div className="full-year">2013</div>
+                    <div className="full-year">2014</div>
+                    <div className="full-year">2015</div>
+                    <div className="full-year">2016</div>
+                    <div className="full-year">2017</div>
+                    <div className="full-year">2018</div>
+                    <div className="full-year">2019</div>
+                    <div className="full-year">2020</div>
+                    <div className="full-year">2021</div>
+                    <div className="full-year">2022</div>
+                    <div className="half-year">2023</div>
                 </div>
                 <div className="about-me-skills-cont">
                     <h2>My Skills</h2>
