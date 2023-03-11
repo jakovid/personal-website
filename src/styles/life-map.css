@@ -2,6 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border-top: 4px solid var(--dark-blue);
+    padding: 2rem 0 2rem 0;
+
+}
+
+.life-map-cont>h1 {
+    font-size: 3.5rem;
+}
+
+.spacer {
+    background-color: var(--blue);
+    height: 0.5rem;
+    margin: 1rem;
+    width: 5vw;
+    border-radius: 0.5rem;
 }
 
 .map-cont {
@@ -18,22 +35,41 @@
     margin-right: -35rem;
 }
 
+#experience-info-cont {
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid var(--dark-blue);
+    border-radius: 8px;
+}
+
 #experience-img {
     max-width: 300px;
     max-height: 80px;
 }
 
 #experience-title {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 #experience-venue {
     font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#experience-location {
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 #experience-description {
-    padding: 15px 15px 0 0;
+    padding: 15px 0 0 0;
 }
 
 .timelines-cont {
@@ -41,15 +77,12 @@
     flex-direction: column;
     gap: 5px;
     padding: 1rem 0 1rem 0;
+    cursor: pointer;
 }
 
 .timeline-name {
     text-align: right;
     padding-right: 5px;
-}
-
-.experience-description {
-    background-color: pink;
 }
 
 .timeline-name {
@@ -66,42 +99,34 @@
 
 .spec-medic.first {
     grid-column: 2 / span 3;
-    background-color: white;
 }
 
 .spec-medic.second {
     grid-column: span 9;
-    background-color: white;
 }
 
 .megazone-intern {
-    background-color: white;
+    grid-column: span 1;
 }
 
 .resolution-economics {
-    background-color: white;
     grid-column: span 2;
 }
 
 .warm-outdoors {
     grid-column: span 7;   
-    background-color: white;
 }
 
 .cic {
     grid-column: span 6;
-    background-color: rgb(13,53,114);
-    color: white;
 }
 
 .amcham {
     grid-column: span 3;
-    background-color: white;
 }
 
 .one-more-drink {
     grid-column: span 7;
-    background-color: yellow;
 }
 
 .free-lance {
@@ -125,6 +150,7 @@
     padding: .25rem;
     gap: 5px;
     text-align: center;
+    background-color: white;
 }
 
 .work-item {
@@ -167,6 +193,23 @@
     grid-column: 40 / span 7;
 }
 
+#selected-experience {
+    background-color: var(--blue);
+    color: white;
+}
+
 .selected-country {
-    fill: red;
+    fill: var(--blue);
+}
+
+.about-me-skills-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.about-me-skills-cont>h2 {
+    font-size: 3.5rem;
 }

@@ -16,18 +16,24 @@ import ResEcon from "../media/resecon.jpg";
 import MZC from "../media/mzc.png";
 import MZC2 from "../media/mzc2.png";
 import Odin from "../media/odin.jpg";
+import Jacob from "../media/jacob-dowdle.png";
+import { IconContext } from "react-icons";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoNodejs} from "react-icons/io";
+import { SiExpress, SiJest, SiMongodb, SiTypescript} from "react-icons/si";
+
 
 export default function BuildLifeMap() {
 
     const [selectedCountry, setSelectedCountry] = useState("TW");
     const [selectedExperience, setSelectedExperience] =useState({
-        title: "Bachelor of Science: Business",
-        venue: "Farmer School of Business",
-        location: "Oxford, Ohio",
-        description: "hi",
-        country: "USA",
-        duration: "2011-2014",
-        img: MU,
+        title: "Full Stack Programmer",
+        venue: "Freelance",
+        location: "Taipei, Taiwan",
+        country: "TW",
+        description: "I am a web developer currently based in the APAC region. I am currently building a new social media web app for live performers with some friends right now! I am open to programming opportunities where I can build something great alongside some other great developers. If you have an opportunity that aligns with my skillset and experience, please do not hesitate to contact me!",
+        duration: "2020-Present",
+        img: Jacob,
     })
 
     const timelineData = [
@@ -54,7 +60,7 @@ export default function BuildLifeMap() {
             venue: "Fudan University",
             location: "Shanghai, China",
             country: "China",
-            description: "hi",
+            description: `Fudan University is one of the top ranked universities in the world. I received the China Scholarship Council's (CSC) full scholarship to join the program. My thesis focused on political economy and competition and was titled "Emerging and Traditional Donors in Developing States: The Determinants of Chinese and American Official Financing in Africa" / "新兴援助国与传统援助国的差异：以中国和美国在非洲的官方援助为例".`,
             duration: "2017-2019",
             img: Fudan,
         },
@@ -72,16 +78,16 @@ export default function BuildLifeMap() {
             venue: "SpecMedic",
             location: "Cincinnati, Ohio",
             country: "USA",
-            description: "hi",
+            description: "SpecMedic was a small family run start-up with a focus on providing quick and cheap repairs to glasses. As a trained laser technician, I used a micro-laser welder to mend eyewear, including argon-gas fueled titanium repairs that most big box retailers deemed unfixable.",
             duration: "2011-2014",
             img: Spec,
         },
         {
-            title: "Quality Assurance Intern",
+            title: "Research Intern",
             venue: "MegaZone Cloud",
             location: "Seoul, South Korea",
             country: "Korea",
-            description: "hi",
+            description: "Megazone is a technology company that works with large Korean corporations, such as Samsung, LG, and Lotte. I was the first foreign worker and intern at the company, and helped them with their English localization, product research, application testing, and creation of presentations. This was my first experience working abroad.",
             duration: "Summer 2012",
             img: MZC2,
         },
@@ -90,7 +96,7 @@ export default function BuildLifeMap() {
             venue: "Resolution Economics LLC",
             location: "Beverly Hills, California",
             country: "USA",
-            description: "Resoultion Economics is a legal services company. During my employment there, the company primarily focused on statistical analyses of payroll data to protect multinational corporations from lawsuits filed by their employees. I help with database creation and cleaning, SASS based analyses, and drafting expert witness reports. It has since grown to five offices across the United States. Each case I worked on was won or settled out of court.",
+            description: "Resoultion Economics is a legal services company. During my employment there, the company primarily focused on statistical analyses of payroll data to protect multinational corporations from lawsuits filed by their employees. My responsibilities focused database creation and cleaning, SASS based analyses, and drafting expert witness reports. It has since grown to five offices across the United States. Each case I worked on was won or settled out of court.",
             duration: "2014- 2015",
             img: ResEcon,
         },
@@ -99,7 +105,7 @@ export default function BuildLifeMap() {
             venue: "The Warm Outdoors",
             location: "Los Angeles, California / Shanghai, China",
             country: "ch-usa",
-            description: "hi",
+            description: "The Warm Outdoors was an e-commerce store that focused on selling outdoor heating equipment and patio furniture. It was my first attempt at entrepreneurship, and it was a major learning experience. I created the website and marketing materials, handled sales, and met with suppliers in China.",
             duration: "2015-2017",
             img: TWO,
         },
@@ -108,7 +114,7 @@ export default function BuildLifeMap() {
             venue: "China Insights Consultancy",
             location: "Shanghai, China",
             country: "China",
-            description: "hi",
+            description: "China Insights Consultancy (CIC) is consulting company in the investment and financing industry. CIC would produce indsutry reports for private companies looking to go public on the Hong Kong Stock Exchange. My primary responsibilities focused on creating and editing financial, economic, and industry documents and presentations for lawyers, banks, and private investors.",
             duration: "2017-2018",
             img: CIC2,
         },
@@ -117,7 +123,7 @@ export default function BuildLifeMap() {
             venue: "The American Chamber of Commerce in Shanghai",
             location: "Shanghai, China",
             country: "China",
-            description: "hi",
+            description: "The American Chamber of Commerce in Shanghai is a business organization that focuses on promoting American businesses in China. It is the third oldest American Chamber of Commerce outside of the United States. I helped maintain membership numbers, created and cleaned up the membership database, assisted with running events, and produced video interviews.",
             duration: "2018-2019",
             img: AmCham,
         },
@@ -126,30 +132,20 @@ export default function BuildLifeMap() {
             venue: "OneMoreDrink.App",
             location: "Taipei, Taiwan",
             country: "TW",
-            description: "hi",
+            description: "In 2019 I moved to Taipei to start a company with a friend in the tourism industry. We eventually pivoted to create the OneMoreDrink app following the collapse of the local tourism industry due to COVID-19. OneMoreDrink was a web and mobile app that allowed users to find nightlife, events, daily specials, and happy hours throughout the city. We stopped maintaining the app once COVID-19 entered Taiwan and shut down most events.",
             duration: "2019-2020",
             img: OMD,
         },
         {
-            title: "Frontend Programmer",
-            venue: "Self-Employed",
+            title: "Full Stack Programmer",
+            venue: "Freelance",
             location: "Taipei, Taiwan",
             country: "TW",
-            description: "hi",
+            description: "I am a web developer currently based in the APAC region. I am currently building a new social media web app for live performers with some friends right now! I am open to programming opportunities where I can build something great alongside some other great developers. If you have an opportunity that aligns with my skillset and experience, please do not hesitate to contact me!",
             duration: "2020-Present",
-            img: MZC,
+            img: Jacob,
         }
     ]
-
-    let timelineInfo = {
-        title: "Bachelor of Science: Business",
-        venue: "Farmer School of Business",
-        location: "Oxford, Ohio",
-        description: "hi",
-        country: "USA",
-        duration: "2011-2014",
-        img: MU,
-    }
 
     function UpdateTimelineInfo(index) {
         setSelectedExperience(timelineData[index]);
@@ -158,8 +154,8 @@ export default function BuildLifeMap() {
 
     return(
         <div className="life-map-cont">
-            <h1>My Journey</h1>
-
+            <h1 id="about">My Journey</h1>
+            <div className="spacer"></div>
             <div className="map-cont">
                 <svg id="world-map-svg" className="world-map-svg" baseprofile="tiny" fill="#ececec" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" version="1.2" viewbox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
  <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="AF" name="Afghanistan">
@@ -1121,57 +1117,119 @@ export default function BuildLifeMap() {
             <div className="timelines-cont">
                 <div className="work-timeline-cont">
                     <div className="timeline-name work">work</div>
-                    <div className="work-item spec-medic first" onMouseOver={() => {UpdateTimelineInfo(4)}}>
+                    <div className="work-item spec-medic first" id={selectedExperience.venue == "SpecMedic" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(4)}}>
                         <img src={Spec2}/>
                     </div>
-                    <div className="work-item megazone-intern" onMouseOver={() => {UpdateTimelineInfo(5)}}>
+                    <div className="work-item megazone-intern" id={selectedExperience.venue == "MegaZone Cloud" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(5)}}>
                         <img src={MZC} />
                     </div>
-                    <div className="work-item spec-medic second" onMouseOver={() => {UpdateTimelineInfo(4)}}>
+                    <div className="work-item spec-medic second" id={selectedExperience.venue == "SpecMedic" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(4)}}>
                         <img src={Spec}/>
                         <div>Laser Technician</div>
                     </div>
-                    <div className="work-item resolution-economics" onMouseOver={() => {UpdateTimelineInfo(6)}}>
+                    <div className="work-item resolution-economics" id={selectedExperience.venue == "Resolution Economics LLC" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(6)}}>
                         <img src={ResEcon}/>
                     </div>
-                    <div className="work-item warm-outdoors" onMouseOver={() => {UpdateTimelineInfo(7)}}>
+                    <div className="work-item warm-outdoors" id={selectedExperience.venue == "The Warm Outdoors" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(7)}}>
                         <img src={TWO}/>
                         <div>Owner/Operator</div>
                     </div>
-                    <div className="work-item cic" onMouseOver={() => {UpdateTimelineInfo(8)}}>
+                    <div className="work-item cic" id={selectedExperience.venue == "China Insights Consultancy" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(8)}}>
                         <img src={CIC}/>
                         <div>Industry Report Editor</div>
                     </div>
-                    <div className="work-item amcham" onMouseOver={() => {UpdateTimelineInfo(9)}}>
+                    <div className="work-item amcham" id={selectedExperience.venue == "The American Chamber of Commerce in Shanghai" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(9)}}>
                         <img src={AmCham}/>
                     </div>
-                    <div className="work-item one-more-drink" onMouseOver={() => {UpdateTimelineInfo(10)}}>
+                    <div className="work-item one-more-drink" id={selectedExperience.venue == "OneMoreDrink.App" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(10)}}>
                         <img src={OMD}/>
                         <div>Co-Founder</div>
                     </div>
-                    <div className="work-item free-lance" onMouseOver={() => {UpdateTimelineInfo(11)}}>
+                    <div className="work-item free-lance" id={selectedExperience.venue == "Freelance" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(11)}}>
+                        <img src={Jacob}/>
                         <div>Freelance Programmer</div>
                     </div>
                 </div>
                 <div className="education-timeline-cont">
                     <div className="timeline-name education">education</div>
-                    <div className="education-item miami-university" onMouseOver={() => {UpdateTimelineInfo(0)}}>
+                    <div className="education-item miami-university" id={selectedExperience.venue == "Farmer School of Business" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(0)}}>
                         <img src={MU}/>
                         <div>Bachelor of Science: Business</div>
                     </div>
-                    <div className="education-item jiaotong-university" onMouseOver={() => {UpdateTimelineInfo(1)}}>
+                    <div className="education-item jiaotong-university" id={selectedExperience.venue == "Shanghai Jiaotong University" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(1)}}>
                         <img src={Jiaotong}/>
                         <div>Chinese Language</div>
                     </div>
-                    <div className="education-item fudan-university" onMouseOver={() => {UpdateTimelineInfo(2)}}>
+                    <div className="education-item fudan-university" id={selectedExperience.venue == "Fudan University" ? "selected-experience" : ""} onMouseOver={() => {UpdateTimelineInfo(2)}}>
                         <img src={Fudan}/>
                         <div>Master of Law:  Poli Sci</div>
                     </div>
-                    <div className="education-item odin-project" onMouseOver={() => {UpdateTimelineInfo(3)}}>
+                    <div className="education-item odin-project" id={selectedExperience.venue == "The Odin Project" ? "selected-experience" : ""}  onMouseOver={() => {UpdateTimelineInfo(3)}}>
                         <img src={Odin}/>
                         <div>The Odin Project</div>
                     </div>
                 </div>
+                <div className="about-me-skills-cont">
+                    <h2>My Skills</h2>
+                    <div className="spacer"></div>
+                    <div className="my-skills-cont">
+                        <div className="skill-icon">
+                            <p>React</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <FaReact/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>TypeScript</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <SiTypescript/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>JavaScript</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <IoLogoJavascript/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>HTML</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <IoLogoHtml5/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>CSS</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <IoLogoCss3/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>NodeJS</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <IoLogoNodejs/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>Express</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <SiExpress/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>MongoDB</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <SiMongodb/>
+                            </IconContext.Provider>
+                        </div>
+                        <div className="skill-icon">
+                            <p>Jest</p>
+                            <IconContext.Provider value={{ size: "4rem"}}>
+                                <SiJest/>
+                            </IconContext.Provider>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
