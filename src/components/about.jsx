@@ -1,9 +1,5 @@
 import React from "react";
 import "../styles/about.css";
-import { IconContext } from "react-icons";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoNodejs} from "react-icons/io";
-import { SiExpress, SiJest, SiMongodb, SiTypescript} from "react-icons/si";
 
 export default function BuildAbout() {
     return(

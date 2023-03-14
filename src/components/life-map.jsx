@@ -29,7 +29,7 @@ export default function BuildLifeMap() {
     const [selectedExperience, setSelectedExperience] =useState({
         title: "Full Stack Programmer",
         venue: "Freelance",
-        location: "Taipei, Taiwan",
+        location: "Taipei",
         country: "TW",
         description: "I am a web developer currently based in the APAC region. I am currently building a new social media web app for live performers with some friends right now! I am open to programming opportunities where I can build something great alongside some other great developers. If you have an opportunity that aligns with my skillset and experience, please do not hesitate to contact me!",
         duration: "2020-Present",
@@ -40,16 +40,16 @@ export default function BuildLifeMap() {
         {
             title: "Bachelor of Science: Business",
             venue: "Farmer School of Business",
-            location: "Oxford, Ohio",
+            location: "Oxford / Shanghai / Beijing / Seoul / Tokyo / Osaka",
             country: "usapac",
-            description: "I attended the Farmer School of Business (FSB) at Miami University. FSB was ranked as a top ten public business school program during the years I attended. During my enrollment at FSB, I was able to join the 2 month traveling business program that visited Peking University in Beijing, Jiaotong University in Shanghai, Tokyo University in Tokyo, and Yonsei University in Seoul. I was one of three students selected from 30 in the program for an internship in Seoul.",
+            description: "I attended the Farmer School of Business (FSB) at Miami University. FSB was ranked as a top ten public business school program during the years I attended. During my enrollment at FSB, I was able to join the traveling business program that visited Peking University in Beijing, Jiaotong University in Shanghai, Tokyo University in Tokyo, and Yonsei University in Seoul. I was one of three students selected from 30 in the program for an internship in Seoul.",
             duration: "2011-2014",
             img: MU,
         },
         {
             title: "Chinese Language Program",
             venue: "Shanghai Jiaotong University",
-            location: "Shanghai, China",
+            location: "Shanghai",
             country: "China",
             description: "I attended the intensive Chinese language program at Jiaotong University. The program consisted of 4 hour classes everyday for a year, with a focus on speaking Mandarin and reading Chinese texts. It was difficult.",
             duration: "2016-2017",
@@ -58,7 +58,7 @@ export default function BuildLifeMap() {
         {
             title: "Master of Law: Political Science",
             venue: "Fudan University",
-            location: "Shanghai, China",
+            location: "Shanghai",
             country: "China",
             description: `Fudan University is one of the top ranked universities in the world. I received the China Scholarship Council's (CSC) full scholarship to join the program. My thesis focused on political economy and competition and was titled "Emerging and Traditional Donors in Developing States: The Determinants of Chinese and American Official Financing in Africa" / "新兴援助国与传统援助国的差异：以中国和美国在非洲的官方援助为例".`,
             duration: "2017-2019",
@@ -67,16 +67,16 @@ export default function BuildLifeMap() {
         {
             title: "Full Stack Self Taught Program",
             venue: "The Odin Project",
-            location: "Taipei, Taiwan",
+            location: "Taipei",
             country: "TW",
-            description: "hi",
+            description: "The Odin Project is a free online resource that gives people the cirriculum to learn programming through project creation. In this course, I learned CSS, HTML, JS, React, Jest, Node, MongoDB, and Express. ",
             duration: "2020-2022",
             img: Odin,
         },
         {
             title: "Laser Technician",
             venue: "SpecMedic",
-            location: "Cincinnati, Ohio",
+            location: "Cincinnati",
             country: "USA",
             description: "SpecMedic was a small family run start-up with a focus on providing quick and cheap repairs to glasses. As a trained laser technician, I used a micro-laser welder to mend eyewear, including argon-gas fueled titanium repairs that most big box retailers deemed unfixable.",
             duration: "2011-2014",
@@ -85,7 +85,7 @@ export default function BuildLifeMap() {
         {
             title: "Research Intern",
             venue: "MegaZone Cloud",
-            location: "Seoul, South Korea",
+            location: "Seoul",
             country: "Korea",
             description: "Megazone is a technology company that works with large Korean corporations, such as Samsung, LG, and Lotte. I was the first foreign worker and intern at the company, and helped them with their English localization, product research, application testing, and creation of presentations. This was my first experience working abroad.",
             duration: "Summer 2012",
@@ -94,7 +94,7 @@ export default function BuildLifeMap() {
         {
             title: "Research Assistant",
             venue: "Resolution Economics LLC",
-            location: "Beverly Hills, California",
+            location: "Beverly Hills",
             country: "USA",
             description: "Resoultion Economics is a legal services company. During my employment there, the company primarily focused on statistical analyses of payroll data to protect multinational corporations from lawsuits filed by their employees. My responsibilities focused database creation and cleaning, SASS based analyses, and drafting expert witness reports. It has since grown to five offices across the United States. Each case I worked on was won or settled out of court.",
             duration: "2014- 2015",
@@ -103,7 +103,7 @@ export default function BuildLifeMap() {
         {
             title: "Owner/Operator",
             venue: "The Warm Outdoors",
-            location: "Los Angeles, California / Shanghai, China",
+            location: "Los Angeles / Shanghai",
             country: "ch-usa",
             description: "The Warm Outdoors was an e-commerce store that focused on selling outdoor heating equipment and patio furniture. It was my first attempt at entrepreneurship, and it was a major learning experience. I created the website and marketing materials, handled sales, and met with suppliers in China.",
             duration: "2015-2017",
@@ -112,7 +112,7 @@ export default function BuildLifeMap() {
         {
             title: "Industry Report Editor",
             venue: "China Insights Consultancy",
-            location: "Shanghai, China",
+            location: "Shanghai",
             country: "China",
             description: "China Insights Consultancy (CIC) is consulting company in the investment and financing industry. CIC would produce indsutry reports for private companies looking to go public on the Hong Kong Stock Exchange. My primary responsibilities focused on creating and editing financial, economic, and industry documents and presentations for lawyers, banks, and private investors.",
             duration: "2017-2018",
@@ -121,7 +121,7 @@ export default function BuildLifeMap() {
         {
             title: "Membership Intern",
             venue: "The American Chamber of Commerce in Shanghai",
-            location: "Shanghai, China",
+            location: "Shanghai",
             country: "China",
             description: "The American Chamber of Commerce in Shanghai is a business organization that focuses on promoting American businesses in China. It is the third oldest American Chamber of Commerce outside of the United States. I helped maintain membership numbers, created and cleaned up the membership database, assisted with running events, and produced video interviews.",
             duration: "2018-2019",
@@ -130,7 +130,7 @@ export default function BuildLifeMap() {
         {
             title: "Co-Founder",
             venue: "OneMoreDrink.App",
-            location: "Taipei, Taiwan",
+            location: "Taipei",
             country: "TW",
             description: "In 2019 I moved to Taipei to start a company with a friend in the tourism industry. We eventually pivoted to create the OneMoreDrink app following the collapse of the local tourism industry due to COVID-19. OneMoreDrink was a web and mobile app that allowed users to find nightlife, events, daily specials, and happy hours throughout the city. We stopped maintaining the app once COVID-19 entered Taiwan and shut down most events.",
             duration: "2019-2021",
@@ -139,7 +139,7 @@ export default function BuildLifeMap() {
         {
             title: "Full Stack Programmer",
             venue: "Freelance",
-            location: "Taipei, Taiwan",
+            location: "Taipei",
             country: "TW",
             description: "I am a web developer currently based in the APAC region. I am currently building a new social media web app for live performers with some friends right now! I am open to programming opportunities where I can build something great alongside some other great developers. If you have an opportunity that aligns with my skillset and experience, please do not hesitate to contact me!",
             duration: "2020-Present",
